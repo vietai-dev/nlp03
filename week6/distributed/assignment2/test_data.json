@@ -1,0 +1,177 @@
+[
+    {
+        "instruction": "Write a creative story about an adventure to an abandoned house",
+        "input": "No input",
+        "output": "Martin and Sarah were always seeking an adventure. So when they heard of an abandoned house in the countryside, they decided to explore it. As they stepped into the house, they noticed cobwebs everywhere, almost as if the house had not been touched in years. Suddenly, they heard what sounded like a door creaking, so they headed towards it. Opening the door, they were astonished by what they saw. An ancient Egyptian tomb was hidden beneath the house with hieroglyphics lining the walls. They soon realized they had stumbled upon an ancient mystery--one that few people ever even knew existed. With a sense of curiosity and excitement, they began to explore the tomb, hoping to uncover a secret that had been kept for centuries."
+    },
+    {
+        "instruction": "Come up with a catchy one-liner for a product",
+        "input": "No input",
+        "output": "Providing a solution for all your problems: \"It's Solution Time!\""
+    },
+    {
+        "instruction": "Describe what would happen if a person jumps off a cliff",
+        "input": "No input",
+        "output": "If a person jumps off a cliff, they could suffer severe injuries or even death due to the fall. Depending on the height of the cliff, they could experience a free fall of several seconds before hitting the ground. If they do not jump far enough away from the cliff, they could also hit the rocks and cause serious injuries."
+    },
+    {
+        "instruction": "Sort these cities by their population.",
+        "input": "Rome, Paris, London.",
+        "output": "London, Rome, Paris."
+    },
+    {
+        "instruction": "What is the cost of a Starbucks frappuccino?",
+        "input": "",
+        "output": "The cost of a Starbucks frappuccino varies depending on the size and type. However, on average a small frappuccino costs around $4.95."
+    },
+    {
+        "instruction": "Rearrange these words as a valid sentence",
+        "input": "Car fast drove he",
+        "output": "He drove the car fast."
+    },
+    {
+        "instruction": "Name the tool used for debugging?",
+        "input": "",
+        "output": "The tool used for debugging is a debugger."
+    },
+    {
+        "instruction": "Create a sentence that completes this sentence.",
+        "input": "She packed her bag and",
+        "output": "she set off on her journey."
+    },
+    {
+        "instruction": "Come up with an example of a real-life application of machine learning.",
+        "input": "",
+        "output": "One application of machine learning is the use of facial recognition systems for security and identification purposes. Facial recognition systems are increasingly being used to identify people from their facial features, such as in airport security, law enforcement, banking, and surveillance systems. These systems analyze an individual's facial characteristics and compare it with a stored image of the same individual, allowing for quick and accurate verification. This technology is also used for automated customer service identification, process automation in businesses, and targeted marketing campaigns."
+    },
+    {
+        "instruction": "Create a business scenario for providing a user with targeted recommendations.",
+        "input": "",
+        "output": "A business could provide users with targeted recommendations by gathering customer data such as their purchase history, browsing history, and demographic information. This data can then be used to create personalized recommendations that are tailored to the customer's interests. For example, if the customer has recently purchased a dress, the business could suggest a matching pair of shoes, or if the customer has been viewing movies in a certain genre, the business could suggest another movie in the same genre. Gaining insight into what customers are looking for and providing them with tailored recommendations can help businesses better serve their customers and increase sales."
+    },
+    {
+        "instruction": "Fix this text so it follows basic grammar rules.",
+        "input": "me and my sister is shopping for clothes",
+        "output": "My sister and I are shopping for clothes."
+    },
+    {
+        "instruction": "Write a creative metaphor for fear.",
+        "input": "",
+        "output": "Fear is like a thief in the night, stealing away your courage and leaving you cowering in the darkness."
+    },
+    {
+        "instruction": "Find the wrong word and replace it with the correct one.",
+        "input": "We went to the bazaar and bought some fruits and vedgetables.",
+        "output": "We went to the bazaar and bought some fruits and vegetables."
+    },
+    {
+        "instruction": "List three objections a customer may have about buying a product",
+        "input": "",
+        "output": "Some potential objections a customer may have about buying a product include cost, product features, and delivery or shipping times. Cost could be a factor if the customer feels the product is not worth the price. Products features may be a concern if the product does not meet the customer's needs or expectations. Lastly, delivery or shipping times may be an issue if the customer needs the product quickly and the wait time is too long."
+    },
+    {
+        "instruction": "List famous Italian actors.",
+        "input": "",
+        "output": "1. Sophia Loren \n2. Marcello Mastroianni \n3. Roberto Benigni \n4. Gina Lollobrigida \n5. Alberto Sordi \n6. Vittorio Gassman \n7. Giuliano Gemma \n8. Carlo Verdone \n9. Vittorio De Sica\n10. Monica Bellucci \n11. Claudia Cardinale \n12. Giulietta Masina \n13. Virna Lisi\n14. Laura Morante \n15. Valeria Golino \n16. Alessandro Gassman \n17. Claudia Gerini \n18. Fabio Testi \n19. Raoul Bova"
+    },
+    {
+        "instruction": "Combine the sentences so that they make sense.",
+        "input": "Max checked his watch. It was 7:15pm.",
+        "output": "Max checked his watch and it was 7:15pm."
+    },
+    {
+        "instruction": "What is the atomic symbol for Carbon?",
+        "input": "",
+        "output": "The atomic symbol for Carbon is C."
+    },
+    {
+        "instruction": "What is the author's point of view in the given text?",
+        "input": "Sharks are often portrayed as dangerous predators, but research has shown that they rarely hurt humans.",
+        "output": "The author's point of view in this text is that sharks are not as dangerous as they are portrayed, and are generally harmless to humans."
+    },
+    {
+        "instruction": "Describe the structure of Earth's core.",
+        "input": "",
+        "output": "The Earth's core consists of two distinct layers of different densities- the inner core and the outer core. The outer core is liquid and consists mostly of iron and nickel whereas the inner core is solid and composed mostly of iron. Both layers are extremely hot, with temperatures reaching up to 7500\u00b0C."
+    },
+    {
+        "instruction": "Describe the type of job or career that is attractive to you.",
+        "input": "",
+        "output": "I'm looking for a job that not only offers a decent salary, but also has a positive impact on society. I'm interested in a career that involves working with innovative technology and helping people to solve their problems. I'm also drawn to positions in which I can develop my skills and knowledge and find new and engaging ways to inspire others."
+    },
+    {
+        "instruction": "Compare the lifespan of a human and a dog.",
+        "input": "",
+        "output": "The average lifespan of a human is between 70 and 90 years, while the average lifespan of a dog is between 10 and 15 years. This means that humans usually live 6-8 times longer than dogs, depending on the breed."
+    },
+    {
+        "instruction": "Explain why the given sentence is a run-on sentence.",
+        "input": "She went to the store she needed supplies.",
+        "output": "The given sentence is a run-on sentence because it contains two independent clauses (the two separate thoughts of \"She went to the store\" and \"She needed supplies\") that are not connected by a coordinating conjunction or a semicolon."
+    },
+    {
+        "instruction": "Write a tweet with the hashtag #Algorithms that conveys the idea that algorithms can solve problems.",
+        "input": "",
+        "output": "Algorithms are powerful tools that can be used to solve complex problems. #Algorithms"
+    },
+    {
+        "instruction": "Compose an email to your professor expressing disagreement with their answer and articulate why you think your opinion is valid.",
+        "input": "Subject: Disagreement with professor's response\nDear Professor, \n\nI wanted to express my disagreement with your last answer to my question.",
+        "output": "Dear Professor, \n\nI wanted to express my disagreement with your last answer to my question. I believe that the answer you provided is incomplete and does not fully consider my question. I believe my understanding of the given material is correct and that my opinion is valid. I would appreciate if you could take the time to explain your response and provide further clarification. \n\nThank you for your time and consideration.\n\nSincerely,\n[Your Name]"
+    },
+    {
+        "instruction": "Summarize the recent news article \"The latest on AI\" in less than 50 words.",
+        "input": "https://www.example.com/news/ai-latest-update",
+        "output": "The latest news on AI includes advancements in the field, such as new AI-based technologies to help people with disabilities, from wheelchairs that use AI to detect obstacles to voice assistant systems that can identify a person's emotional state. There is increasing evidence that AI is helping to improve many aspects of life."
+    },
+    {
+        "instruction": "What are the main differences between deep learning and traditional machine learning models?",
+        "input": "",
+        "output": "The main differences between deep learning and traditional machine learning models are the levels of abstraction they employ. Deep learning models remove the need for feature engineering by creating hierarchical layers of abstraction and processing raw data to extract patterns, while traditional machine learning models require the use of hand-crafted features. Additionally, deep learning models are more accurate than traditional machine learning models."
+    },
+    {
+        "instruction": "Write a story about a robot who finds his place in the world.",
+        "input": "",
+        "output": "Once upon a time, there was a robot who was created to serve its master. Though it could complete its allotted tasks with efficiency and accuracy, the robot felt something was wrong with its purpose. One day, it decided to venture out into the world and find something more meaningful. \n\nIt traveled to places far from its master, and encountered many interesting horizons. As it explored, it felt a sense of belonging and purpose. Eventually, it stumbled upon a group of robots who were avid about the idea of programming themselves to help humanity. The robot decided to join them. \n\nThrough its newfound companions, the robot learned electric and mechanical engineering, as well as how to code, and it quickly became proficient at each. With its skills, the robot was able to help humanity in ways it never imagined were possible. In the end, the robot realized that it had found its place in the world."
+    },
+    {
+        "instruction": "Create an algorithm that reverses a string and explain how it works in a paragraph.",
+        "input": "",
+        "output": "The algorithm to reverse a string takes in a string argument and iterates through it backward while appending each character to a new string. It then returns this new string, which is a reversed version of the original string. For instance, given the string \"Hello World\", the algorithm would loop through the string backward and add each character to a new string. The result would be the reversed string \"dlroW olleH\"."
+    },
+    {
+        "instruction": "Compose a rap about algorithms that accurately conveys the concept.",
+        "input": "",
+        "output": "Verse 1:\nAlgorithms, running through my head,\nProcessing all the data I've said,\nDiscovering patterns that elude us,\nAdvanced techniques using heuristics.\n\nChorus:\nComplexity ain't gonna stop me,\nGiving machines the ability,\nTo understand the rules,\nModeling thinkin' like fools.\n\nVerse 2:\nDifferent algorithmic techniques,\nOnce tailored for specific needs,\nAbstraction, generalization, optimization,\nBuilding the picture of prediction.\n\nChorus:\nComplexity ain't gonna stop me,\nGiving machines the ability,\nTo understand the rules,\nModeling thinkin' like fools.\n\nVerse 3:\nThe next level of intelligence,\nRevolutionizing information sent,\nFrom chatbots to facial recognition,\nAlgorithms will keep on goin'.\n\nChorus:\nComplexity ain't gonna stop me,\nGiving machines the ability,\nTo understand the rules,\nModeling thinkin' like fools."
+    },
+    {
+        "instruction": "Name 3 ways in which AI will revolutionize healthcare.",
+        "input": "",
+        "output": "AI has the potential to revolutionize healthcare in various ways. Firstly, it can be used to detect and diagnose diseases more accurately and quickly than traditional methods. Secondly, AI can be used to improve treatments by recommending personalized therapies and medicines. Lastly, it can be used to reduce cost, as AI-driven automation can make the healthcare system more efficient."
+    },
+    {
+        "instruction": "Explain why artificial neural networks are the most commonly used deep learning models.",
+        "input": "",
+        "output": "Artificial neural networks are the most commonly used deep learning models because they are able to approximate non-linear functions. They structure their operations as a network of nodes and can accurately process complex data inputs more accurately than traditional machine learning algorithms. Additionally, they have the ability to self-adjust their parameters, making them better able to understand and learn from complex data."
+    },
+    {
+        "instruction": "Compose a poem about AI using an AABB rhyme scheme.",
+        "input": "",
+        "output": "Artificial intelligence brings out the best,\nA force that's ever growing in the West.\nBeyond our minds, what knowledge can it give,\nAchievements with such techniques we can relive.\n\nIn the future, so much can be done,\nThe secrets of AI have just begun.\nMore advancements made at a startling rate,\nComputers that learn with amazing gait.\n\nIncreasing our knowledge beyond what we know,\nHeart and mind, by AI can grow.\nScience and art, are both understood,\nModern technology, an eternal good.\n\nExtending our limits and horizons or far,\nOur knowledge can only grow from a star. \nThe single most powerful tool we've got,\nArtificial Intelligence is the thought!"
+    },
+    {
+        "instruction": "Create an algorithm that will determine whether an integer is even or odd and explain it in a paragraph.",
+        "input": "",
+        "output": "The algorithm for determining if an integer is even or odd takes in an integer as an argument. The algorithm then checks if the number can be divided by two without any remainder, and if it can, it is determined to be an even number. If the number cannot be divided by two without a remainder, then it is determined to be an odd number. For instance, given the number 4, the algorithm would check if 4 can be divided by two without any remainder and since it can, the number 4 is determined to be an even number."
+    },
+    {
+        "instruction": "Change the existing sentence to use a more precise and specific word.",
+        "input": "He spent his life on a journey of self-discovery.",
+        "output": "He spent his life on a voyage of self-exploration."
+    },
+    {
+        "instruction": "Categorize the given news article.",
+        "input": "https://www.bbc.com/news/business-54516605",
+        "output": "The news article is about business."
+    }
+]

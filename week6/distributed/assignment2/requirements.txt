@@ -1,0 +1,9 @@
+gdown
+sentencepiece
+transformers>=4.28.0
+loralib 
+bitsandbytes 
+appdirs
+accelerate==0.18.0
+datasets==2.12.0
+git+https://github.com/huggingface/peft.git
