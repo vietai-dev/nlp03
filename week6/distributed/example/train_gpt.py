@@ -324,3 +324,21 @@ while True:
 
 if ddp:
     destroy_process_group()
+
+
+mixed_precision_dtype, train_progress_bar=1
+GradScaler,train_dataloader =1
+criterion, attention_masks, labels, input_ids=1
+
+scaler = GradScaler()
+
+model.train()
+for batch in train_dataloader:
+    optimizer.zero_grad()
+
+    with torch.amp.autocast(device_type='cuda', dtype=mixed_precision_dtype):
+        outputs = model(**batch)
+        loss = criterion(outputs.logits, labels)
+
+        # TODO Update gradient when use mixed_precision_dtype
+

@@ -29,6 +29,7 @@ class Trainer:
             num_epochs: int = 10, 
             max_length: int = 128, 
             batch_size: int = 8,
+            mixed_precision_dtype =  None,
             gradient_accumulation_steps: int = 16):
         """
         Initialize the Trainer class.
@@ -56,12 +57,12 @@ class Trainer:
 
         # move model to device
         model.to(f"cuda:{self.gpu_id}")
-
-        # TODO: Setup mixed precision training context. If 'mixed_precision_dtype' is None, use 'nullcontext', 
-        # otherwise use 'torch.amp.autocast' with the specified dtype.
-        mixed_precision_dtype = None ### YOUR CODE HERE ###
-        self.ctx = nullcontext() ### YOUR CODE HERE ###
+        self.set_mixed_precision_context(mixed_precision_dtype)
         
+        
+    def set_mixed_precision_context(self, mixed_precision_dtype):
+        # TODO: Setup mixed precision training context. If 'mixed_precision_dtype' is None, use 'nullcontext', 
+        self.ctx = nullcontext() ### YOUR CODE HERE ###
 
     def _set_ddp_training(self):
         # TODO: Initialize the DistributedDataParallel wrapper for the model. 
@@ -211,6 +212,7 @@ class Trainer:
 
 
 def load_tokenizer_from_pretrained_model(model_path):
+    
     config = AutoConfig.from_pretrained(model_path)
     architecture = config.architectures[0]
     tokenizer = AutoTokenizer.from_pretrained(model_path)
@@ -237,7 +239,7 @@ def _is_master_process():
     ddp_rank = int(os.environ['RANK'])
     return ddp_rank == 0
 
-def load_pretrained_model(local_rank):
+def load_pretrained_model(local_rank, model_path: str = ""):
     # TODO: Load a pretrained AutoModelForCausalLM from the 'model_path' in float16 data type. 
     # Make sure to set 'device_map' to '{"": torch.device(f"cuda:{local_rank}")}' for DDP training.
 
@@ -300,7 +302,7 @@ if __name__ == "__main__":
         local_rank = 0
 
     # Prepare model
-    model = load_pretrained_model(local_rank)
+    model = load_pretrained_model(local_rank, model_path= model_path)
     # Get tokenizer
     tokenizer = load_tokenizer_from_pretrained_model(model_path = model_path)
 
