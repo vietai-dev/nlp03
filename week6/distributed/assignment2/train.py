@@ -97,6 +97,7 @@ class Trainer:
             outputs = self.model(**batch) 
             loss = outputs.loss / self.gradient_accumulation_steps  # Normalize loss
         loss_val = loss.item()
+        
         # TODO: If 'mixed_precision_dtype' is torch.float16, you have to modify the backward using the gradscaler.
         if self.mixed_precision_dtype==torch.float16:
             ### YOUR CODE HERE ###
@@ -137,9 +138,11 @@ class Trainer:
             # Perform optimizer step and reset gradients after accumulating enough gradients
             if steps % self.gradient_accumulation_steps == 0:
     
-                # TODO: If 'mixed_precision_dtype' is torch.float16, you have to modify the gradient update step using the gradscaler.
+                #If 'mixed_precision_dtype' is torch.float16, you have to modify the gradient update step using the gradscaler.
                 if self.mixed_precision_dtype==torch.float16:
                     ### YOUR CODE HERE ###
+                    # TODO: optimizer step
+                    # TODO: update scaler factor 
                     pass 
                 else:
                     self.optimizer.step()
