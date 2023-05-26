@@ -61,8 +61,14 @@ class Trainer:
         
         
     def set_mixed_precision_context(self, mixed_precision_dtype):
-        # TODO: Setup mixed precision training context. If 'mixed_precision_dtype' is None, use 'nullcontext', 
-        self.ctx = nullcontext() ### YOUR CODE HERE ###
+        # TODO: Setup mixed precision training context
+        if mixed_precision_dtype is None:
+            # If 'mixed_precision_dtype' is None, use 'nullcontext', 
+            self.ctx = nullcontext()
+        else:
+            # TODO
+            # If 'mixed_precision_dtype' is not None, need use autocast
+            pass
 
     def _set_ddp_training(self):
         # TODO: Initialize the DistributedDataParallel wrapper for the model. 
