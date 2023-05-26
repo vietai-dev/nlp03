@@ -51,12 +51,14 @@ class Trainer:
         self.tokenizer = tokenizer
         self.is_ddp_training = is_ddp_training
         
-        self.model = model  
+        self.model = model.to(f"cuda:{self.gpu_id}")  
         self.gpu_id = gpu_id
         self.gradient_accumulation_steps = gradient_accumulation_steps
-
-        # move model to device
-        model.to(f"cuda:{self.gpu_id}")
+        self.gradscaler = None
+        self.ctx  = None
+        self.mixed_precision_dtype = mixed_precision_dtype
+            
+        # set mixed precision context
         self.set_mixed_precision_context(mixed_precision_dtype)
         
         
@@ -66,9 +68,10 @@ class Trainer:
             # If 'mixed_precision_dtype' is None, use 'nullcontext', 
             self.ctx = nullcontext()
         else:
-            # TODO
-            # If 'mixed_precision_dtype' is not None, need use autocast
-            pass
+            # TODO If 'mixed_precision_dtype' is not None, need use autocast & init gradscaler (hint: use GradScaler())
+            self.ctx = None ### YOUR CODE HERE ###
+            self.gradscaler = None ### YOUR CODE HERE ###
+            
 
     def _set_ddp_training(self):
         # TODO: Initialize the DistributedDataParallel wrapper for the model. 
@@ -88,10 +91,18 @@ class Trainer:
             Loss value for the batch.
         """
         
+       
         with self.ctx:
             outputs = self.model(**batch) 
             loss = outputs.loss / self.gradient_accumulation_steps  # Normalize loss
-        loss.backward()
+        
+        # TODO If 'mixed_precision_dtype' is not None, need to modify the backward
+        if self.mixed_precision_dtype is not None:
+            ### YOUR CODE HERE ###
+            pass 
+        else:
+            loss.backward()
+
         return loss.item()
 
     def _run_epoch(self, train_dataloader, epoch):
@@ -118,17 +129,21 @@ class Trainer:
         steps = 0
         self.optimizer.zero_grad()  # Reset gradients at the beginning of each epoch
         for step, batch in enumerate(train_progress_bar):
+            steps += 1
             batch = {key: value.to(self.gpu_id) for key, value in batch.items()}
             loss = self._run_batch(batch)
             epoch_loss += loss 
-
-            # Increment steps
-            steps += 1
-
             # Perform optimizer step and reset gradients after accumulating enough gradients
             if steps % self.gradient_accumulation_steps == 0:
-                self.optimizer.step()
-                self.optimizer.zero_grad()
+    
+                # TODO If 'mixed_precision_dtype' is not None, need to modify the optimizer
+                if self.mixed_precision_dtype is not None:
+                    ### YOUR CODE HERE ###
+                    pass 
+                else:
+                    self.optimizer.step()
+                    self.optimizer.zero_grad()
+
                 torch.cuda.empty_cache()
         epoch_loss /= (len(train_dataloader) / self.gradient_accumulation_steps)
         return epoch_loss
