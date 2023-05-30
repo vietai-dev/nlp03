@@ -153,17 +153,19 @@ class Trainer:
         return epoch_loss
     
     def _save_checkpoint(self, epoch):
-        path_dir = f"{self.output_dir}/epoch_{epoch}"
+        checkpoint_path_dir = f"{self.output_dir}/epoch_{epoch}_checkpoint"
         
         # check path_dir exited
-        if not os.path.exists(path_dir):
-            os.makedirs(path_dir)
+        if not os.path.exists(checkpoint_path_dir):
+            os.makedirs(checkpoint_path_dir)
 
         # save checkpoints
         if self.is_ddp_training and _is_master_process():
-            self.model.module.save_pretrained(f'epoch_{epoch}_checkpoint')
+            # save checkpoints to local
+            self.model.module.save_pretrained(checkpoint_path_dir)
+        
         else:
-            self.model.save_pretrained(f'epoch_{epoch}_checkpoint')
+            self.model.save_pretrained(checkpoint_path_dir)
 
     def prepare_dataloader(self, train_dataset, eval_dataset):
         # TODO: Prepare the training DataLoader. Initialize 'DataLoader' with 'train_dataset' 
@@ -293,7 +295,7 @@ if __name__ == "__main__":
     backend = "nccl"
     model_path = 'bigscience/bloom-1b7'
     if os.environ.get("DEBUG"):
-        data_path = "test_data.json"
+        data_path = 'test_data.json'
     else:
         data_path = 'alpaca_data.json'
         download_from_driver(path= DRIVER_DATA_PATH, location_path= data_path)
@@ -342,7 +344,7 @@ if __name__ == "__main__":
         tokenizer=tokenizer,
         output_dir= OUTPUT_DIR,
         is_ddp_training = True if distributed_strategy == "ddp" else False,
-        gradient_accumulation_steps = gradient_accumulation_steps,
+        gradient_accumulation_steps = gradient_accumulation_steps
     )
     
     # set ddp for wraping model
