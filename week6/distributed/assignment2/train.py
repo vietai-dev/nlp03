@@ -50,9 +50,9 @@ class Trainer:
         self.output_dir = output_dir
         self.tokenizer = tokenizer
         self.is_ddp_training = is_ddp_training
-        
-        self.model = model.to(f"cuda:{self.gpu_id}")  
         self.gpu_id = gpu_id
+        self.model = model.to(f"cuda:{self.gpu_id}")  
+        
         self.gradient_accumulation_steps = gradient_accumulation_steps
         
         self.mixed_precision_dtype = mixed_precision_dtype
