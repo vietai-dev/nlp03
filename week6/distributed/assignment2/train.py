@@ -338,7 +338,7 @@ if __name__ == "__main__":
         max_length = max_length,
         batch_size = batch_size,
         gpu_id=local_rank,
-        mixed_precision_dtype = mixed_precision_dtype 
+        mixed_precision_dtype = mixed_precision_dtype,
         tokenizer=tokenizer,
         output_dir= OUTPUT_DIR,
         is_ddp_training = True if distributed_strategy == "ddp" else False,
