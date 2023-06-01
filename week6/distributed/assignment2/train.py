@@ -303,7 +303,7 @@ if __name__ == "__main__":
     size_valid_set = 0.1
     max_length = 512
     num_epochs = 10
-    batch_size = 4
+    batch_size = 2
     gradient_accumulation_steps = 16
 
     learning_rate = 3e-4
